@@ -4,6 +4,8 @@ Description
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Site preview: https://dawidhm.github.io/todo-list-react/
+
 ## Available Scripts
 
 In the project directory, you can run:
