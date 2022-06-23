@@ -1,10 +1,10 @@
 import "./style.css"
 
-const deleteTask = (name) => {
+const removeTask = (name) => {
 	console.log(`Nazwa zadania do usunięcia: ${name}`);
 }
 
-const Tasks = ({ tasks, hideDone }) => {
+const Tasks = ({ tasks, hideDone, removeTask }) => {
 	return (
 		<ul className="tasksList">
 			{tasks.map(singleTask => (
@@ -19,7 +19,7 @@ const Tasks = ({ tasks, hideDone }) => {
 					</div>
 					<button
 						className="tasksList__button tasksList__button--remove remove"
-						onClick={() => deleteTask(singleTask.content)}
+						onClick={() => removeTask(singleTask.id)}
 					>
 						🗑
 					</button>
